@@ -2,7 +2,7 @@ FROM apache/superset:latest
 
 USER root
 
-RUN pip install mysqlclient
+RUN pip install mysqlclient pymysql
 
 ENV ADMIN_USERNAME $ADMIN_USERNAME
 ENV ADMIN_EMAIL $ADMIN_EMAIL
